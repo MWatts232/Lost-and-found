@@ -67,4 +67,4 @@ body:before{inset:0;border-radius:0;box-shadow:none;background-image:radial-grad
 .links{position:relative}.home-mark{position:absolute;top:15px;left:17px;z-index:5;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;transition:transform .2s ease,filter .2s ease}.home-mark img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 1px 3px rgba(0,0,0,.35));transition:filter .2s ease}.home-mark:hover,.home-mark:focus-visible{transform:scale(1.08);filter:drop-shadow(0 0 9px rgba(228,185,125,.6));outline:1px solid rgba(228,185,125,.55);outline-offset:3px}.home-mark:focus-visible{outline-offset:4px}
 @media(max-width:520px){.home-mark{top:11px;left:11px;width:36px;height:36px}}
 
-.email-icon svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.email-link{letter-spacing:.14em}
+.email-link{letter-spacing:.14em}
