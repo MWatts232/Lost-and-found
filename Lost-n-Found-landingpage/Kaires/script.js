@@ -40,11 +40,11 @@ setDieFace(20);
 
 const rollButton = byId("rollDie");
 const outcomes = {
-  1: "You swing. The air escapes unharmed.",
+  1: "Oh... You have a backup character, right ?",
   2: "You search the room. Nothing. Not even a clue.",
-  3: "The chest looks suspicious. It is just a chest.",
-  4: "The lock holds. It has heard this before.",
-  5: "Your lie is convincing. The guard is not.",
+  3: "It is just a chest. A very large, normal chest.",
+  4: "You do not seduce the dragon.",
+  5: "The guard is not impressed by the bribe",
   6: "The trap goes off. At least it was the obvious one.",
   7: "You find the clue the party walked past twice.",
   8: "The plan works. One small detail is now on fire.",
@@ -55,10 +55,10 @@ const outcomes = {
   13: "You spot the ambush just before it spots you.",
   14: "That chest has teeth. Good call checking first.",
   15: "A solid hit. The enemy is taking you seriously.",
-  16: "You pick the lock. The key was in your pocket.",
-  17: "The plan works. The DM quietly adjusts the next room.",
+  16: "You pick the lock. Who needs keys anyway ?.",
+  17: "The dragon seems.... Interested.",
   18: "You find the hidden door behind the suspicious tapestry.",
-  19: "Perfect timing. The DM is checking the wording.",
+  19: "The Goblin agrees to be the party mascot",
   20: "Natural twenty. The ridiculous plan is now canon.",
 };
 rollButton.addEventListener("click", () => {
