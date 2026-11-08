@@ -8,6 +8,8 @@ STRUCTURE
 index.html                 Lost and Found home page
 hub.css                    Root page styling
 assets/LF-Badge.png        Lost and Found badge
+favicon.ico and PNGs      Browser, mobile, and Apple touch icons
+site.webmanifest          Installed-site icon metadata
 Kaires/index.html          Kaires landing page
 Kaires/styles.css          Kaires page styling
 Kaires/script.js           Dice roll and randomized mannequin poses
