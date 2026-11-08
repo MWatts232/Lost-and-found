@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17110d">
+  <meta name="description" content="Find Kaires around the web: stories, short videos, art, and live streams.">
+  <title>Kaires — Links from the Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mannequin-watches" aria-hidden="true">
+    <div class="mannequin-watch mannequin-watch-left">
+      <img src="assets/pose-thinking-1.png" alt="">
+      <img src="assets/pose-reading-1.png" alt="">
+      <img src="assets/pose-idea.png" alt="">
+      <img src="assets/pose-phone.png" alt="">
+      <img src="assets/pose-blank.png" alt="">
+    </div>
+    <div class="mannequin-watch mannequin-watch-right">
+      <img src="assets/pose-thinking-2.png" alt="">
+      <img src="assets/pose-reading-2.png" alt="">
+      <img src="assets/pose-heroic.png" alt="">
+      <img src="assets/pose-reading-3.png" alt="">
+      <img src="assets/pose-gune.png" alt="">
+    </div>
+  </div>
+  <main class="page">
+    <section class="links" aria-labelledby="site-title">
+      <a class="home-mark" href="../" aria-label="Return to The Lost and Found home"><img src="assets/LF-Badge.png" alt="The Lost and Found"></a>
+      <button class="die" id="rollDie" type="button" aria-label="Roll a twenty-sided die">
+        <span class="die-face" id="dieFace" aria-hidden="true"></span>
+        <span class="sr-only" id="dieResult" aria-live="polite">20</span>
+      </button>
+      <p class="roll-message" id="rollMessage" aria-live="polite">Roll for your next adventure</p>
+
+      <h1 id="site-title">KAIRES</h1>
+      <div class="brand-mark" aria-label="Kaires mask emblem"><span></span><img src="assets/kaires-logo.png" alt="Kaires's masked emblem"><span></span></div>
+
+      <nav class="social-links" aria-label="Kaires social links">
+        <a class="social-link" href="https://www.youtube.com/@Kaires_">
+          <span class="social-icon youtube-icon" aria-hidden="true"><img src="assets/icons8-youtube-96.png" alt=""></span><span>YouTube</span><span class="link-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="social-link" href="https://www.twitch.tv/Kaires__">
+          <span class="social-icon twitch-icon" aria-hidden="true"><img src="assets/icons8-twitch-96.png" alt=""></span><span>Twitch</span><span class="link-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/kaires.shadow">
+          <span class="social-icon instagram-icon" aria-hidden="true"><img src="assets/icons8-instagram-96.png" alt=""></span><span>Instagram</span><span class="link-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="social-link" href="https://www.tiktok.com/@kaires_shadow">
+          <span class="social-icon tiktok-icon" aria-hidden="true"><img src="assets/icons8-tiktok-96.png" alt=""></span><span>TikTok</span><span class="link-arrow" aria-hidden="true">↗</span>
+        </a>
+        <button class="social-link facebook-link" type="button" disabled aria-label="Facebook coming soon">
+          <span class="social-icon facebook-icon" aria-hidden="true"><img src="assets/icons8-facebook-96.png" alt=""></span><span>Facebook</span><span class="coming-soon">TBA</span>
+        </button>
+      </nav>
+    </section>
+  </main>
+
+  <output class="sr-only" id="pageStatus" aria-live="polite"></output>
+  <script src="script.js" defer></script>
+</body>
+</html>
