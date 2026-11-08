@@ -40,8 +40,26 @@ setDieFace(20);
 
 const rollButton = byId("rollDie");
 const outcomes = {
-  1: "A fumble. The tale begins in the wrong tavern.",
-  20: "Natural twenty. The next chapter is yours.",
+  1: "You swing. The air escapes unharmed.",
+  2: "You search the room. Nothing. Not even a clue.",
+  3: "The chest looks suspicious. It is just a chest.",
+  4: "The lock holds. It has heard this before.",
+  5: "Your lie is convincing. The guard is not.",
+  6: "The trap goes off. At least it was the obvious one.",
+  7: "You find the clue the party walked past twice.",
+  8: "The plan works. One small detail is now on fire.",
+  9: "The door opens. It was never locked.",
+  10: "You get a yes, followed by several conditions.",
+  11: "You make the jump. The landing is less heroic.",
+  12: "The NPC agrees. The fee comes up after the handshake.",
+  13: "You spot the ambush just before it spots you.",
+  14: "That chest has teeth. Good call checking first.",
+  15: "A solid hit. The enemy is taking you seriously.",
+  16: "You pick the lock. The key was in your pocket.",
+  17: "The plan works. The DM quietly adjusts the next room.",
+  18: "You find the hidden door behind the suspicious tapestry.",
+  19: "Perfect timing. The DM is checking the wording.",
+  20: "Natural twenty. The ridiculous plan is now canon.",
 };
 rollButton.addEventListener("click", () => {
   if (rollButton.classList.contains("is-rolling")) return;
@@ -51,11 +69,7 @@ rollButton.addEventListener("click", () => {
   window.setTimeout(() => {
     setDieFace(result);
     byId("dieResult").textContent = result;
-    byId("rollMessage").textContent = outcomes[result] || (
-      result >= 15 ? "A promising roll. Fortune leans your way." :
-      result >= 8 ? "The road is uncertain. Keep your wits about you." :
-      "The die is unkind. There is still another path."
-    );
+    byId("rollMessage").textContent = outcomes[result];
     byId("pageStatus").textContent = `The die lands on ${result}.`;
   }, 400);
   window.setTimeout(() => {
