@@ -1,32 +1,13 @@
-THE LOST AND FOUND — CREATOR HUB
-================================
+THE LOST AND FOUND — HOMEPAGE ONLY
 
-A lightweight static site for GitHub + Cloudflare Pages. The root page is a placeholder creator directory; each creator has a self-contained folder.
+This standalone homepage package contains only:
+- index.html
+- styles.css
+- assets/lost-and-found-badge.png
+- assets/kaires-logo.png
+- assets/lilredfox-happy.webp
+- assets/fantasy-chest.png
 
-STRUCTURE
----------
-index.html                 Lost and Found home page
-hub.css                    Root page styling
-assets/LF-Badge.png        Lost and Found badge
-favicon.ico and PNGs      Browser, mobile, and Apple touch icons
-site.webmanifest          Installed-site icon metadata
-Kaires/index.html          Kaires landing page
-Kaires/styles.css          Kaires page styling
-Kaires/script.js           Dice roll and randomized mannequin poses
-Kaires/assets/             Kaires page images and icons
-Kaires/assets/archive/     Older unused image exports retained for later use
+No Kaires folder or creator assets are included. The supplied Lost and Found badge appears in the site header and replaces the former gothic-window illustration beside the hero title. The hero badge uses a single outer frame. The Kaires creator card uses the Kaires logo. The LilRedFox creator card uses her Happy sticker and links to /LilRedFox/. The market illustration uses a transparent, dark-walnut fantasy chest image. The Kaires creator card links to /Kaires/ so it can connect to the existing creator page when this homepage is placed at the repository root.
 
-ROUTES
-------
-/                          Lost and Found creator directory
-/Kaires/                   Kaires landing page
-
-The Kaires card links to the Kaires folder. The Lost and Found badge at the upper-left of the Kaires panel returns visitors to the root page. Add future creators as sibling folders (for example, /CreatorName/) and link to them from the root index.
-
-PUBLISHING
-----------
-Upload the contents of this package to the repository root connected to Cloudflare Pages. Use the root directory as the project root with no build command and no output directory. Cloudflare Pages serves the root index and the Kaires/index.html page from /Kaires/.
-
-KAIRES INTERACTIONS
--------------------
-The direct social links open their accounts. Facebook is marked TBA. Clicking the numbered D20 rolls a result from 1 to 20 and updates the message. On wide screens, the supplied mannequin poses cycle independently on each side.
+To deploy with the existing GitHub + Cloudflare Pages project, upload these files into the repository root, replacing the root index.html and adding styles.css plus assets/lost-and-found-badge.png. Leave the existing Kaires/ folder in place.

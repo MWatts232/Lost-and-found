@@ -3,36 +3,85 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17110d">
-  <meta name="description" content="The Lost and Found — a home for independent creators and their worlds.">
-  <title>The Lost and Found</title>
+  <meta name="theme-color" content="#191416">
+  <meta name="description" content="The Lost and Found is a home for friends, creators, shared adventures, and the things we make along the way.">
+  <title>The Lost and Found — A home for the party</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="hub.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="hub">
-    <header class="hub-heading">
-      <img class="hub-badge" src="assets/LF-Badge.png" alt="The Lost and Found emblem">
-      <p class="eyebrow">A home for wandering creators</p>
-      <h1>The Lost <em>and</em> Found</h1>
-      <p class="intro">Choose a creator to step into their corner of the world.</p>
-    </header>
-    <section class="creator-list" aria-label="Creators">
-      <a class="creator-card" href="Kaires/" aria-label="Visit Kaires">
-        <img src="Kaires/assets/kaires-logo.png" alt="">
-        <span><small>Creator</small><strong>Kaires</strong></span>
-        <span class="visit" aria-hidden="true">↗</span>
-      </a>
-      <p class="coming">More creators will find their way here soon.</p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="The Lost and Found home">
+      <img src="assets/lost-and-found-badge.png" alt="">
+      <span>THE LOST <i>&amp;</i> FOUND</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#creators">Creators</a>
+      <a href="#market">The market</a>
+      <a href="#about">Our story</a>
+    </nav>
+    <a class="header-cta" href="#creators">Meet The Party <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A gathering place for the party</p>
+        <h1 id="hero-title">Roll For<br><em>Initiative</em></h1>
+        <p class="hero-intro">A group of misguided Creatives, Chaotic Gremlins, and people looking to escape reality.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#creators">Meet the creators <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#about">What is Lost &amp; Found?</a>
+        </div>
+        <div class="hero-note"><span class="note-mark">✦</span><span>The best items are always in The Lost and Found.</span></div>
+      </div>
+      <div class="emblem-panel" aria-label="The Lost and Found emblem">
+        <div class="emblem-topline"><span>THE LOST &amp; FOUND</span><span>EST. 2020</span></div>
+        <div class="emblem-setting">
+          <img class="guild-logo" src="assets/lost-and-found-badge.png" alt="The Lost and Found badge">
+        </div>
+        <div class="emblem-caption"><span>ROLL TOGETHER</span><span aria-hidden="true">✦</span><span>MAKE SOMETHING</span></div>
+      </div>
     </section>
-    <footer>THE LOST AND FOUND</footer>
+
+    <section class="creators section-block" id="creators" aria-labelledby="creators-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Find your people</p><h2 id="creators-title">Meet the party</h2></div>
+        <p>Meet the creators, and see what they’re making.</p>
+      </div>
+      <div class="creator-grid">
+        <a class="creator-card kaires-card" href="/Kaires/">
+          <div class="creator-avatar" aria-hidden="true"><img src="assets/kaires-logo.png" alt=""></div>
+          <div class="creator-copy"><span class="card-kicker">Creator · Stories &amp; Creativity</span><h3>Kaires</h3><p>The DM, existensial adventures, tabletop ideas, and the stories hiding inside the games we play.</p><span class="card-link">Step into Kaires' world <b aria-hidden="true">↗</b></span></div>
+        </a>
+        <a class="creator-card lilredfox-card" href="/LilRedFox/">
+          <div class="creator-avatar" aria-hidden="true"><img src="assets/lilredfox-happy.webp" alt=""></div>
+          <div class="creator-copy"><span class="card-kicker">Creator · Streams &amp; Games</span><h3>LilRedFox</h3><p>The Fox Girl Sorcerer. Chaotic Streams, unhinged co-op, and questionable decisions.</p><span class="card-link">Visit LilRedFox's den <b aria-hidden="true">↗</b></span></div>
+        </a>
+        <div class="creator-card soon-card" aria-label="More creators joining soon">
+          <div class="soon-symbol" aria-hidden="true">＋</div>
+          <div class="creator-copy"><span class="card-kicker">More paths ahead</span><h3>The next seat</h3><p>More of the party will have a corner here soon. Keep a chair open.</p><span class="card-link">New creators on the way</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="market section-block" id="market" aria-labelledby="market-title">
+      <div class="market-art" aria-hidden="true">
+        <div class="market-stamp">L&amp;F<br><small>SUPPLY</small></div>
+        <img class="market-chest" src="assets/fantasy-chest.png" alt="">
+        <span class="market-art-caption">PACKED FOR THE ROAD</span>
+      </div>
+      <div class="market-copy"><p class="eyebrow">Useful things &amp; curious finds</p><h2 id="market-title">The Chest of Goodies</h2><p>We’re making room for creator-made goods, campaign favourites, and gear we actually use. Some finds will be shared by the whole group; others will belong to a particular creator.</p><span class="coming-pill"><span></span> The shelves are being stocked</span></div>
+    </section>
+
+    <section class="about section-block" id="about" aria-labelledby="about-title">
+      <div class="about-mark" aria-hidden="true">“</div>
+      <div class="about-copy"><p class="eyebrow">The origins</p><h2 id="about-title">A shared world.<br><em>Good company.</em></h2><p>The Lost &amp; Found began with a group of friends looking to stay conected during a global crisis. One day AVORIA was created. A D&amp;D Campaign built together. We created a shared world, shared stories, and a reason to look forward to next week.</p><p>Some of us ventured to bring that same energy beyond the table into videos, games, art, and other projects we make together or with our community. We strive to share our creation, bring some joy, and entertainmnet to the world.</p><p class="about-signoff">Come Join Us. Our Story is better with you in it.</p></div>
+    </section>
   </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="#top">THE LOST <i>&amp;</i> FOUND</a><span>A party of friends, Lost and Found.</span><a href="#top" class="back-top">Back to the trail ↑</a></footer>
 </body>
 </html>
